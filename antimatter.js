@@ -272,8 +272,8 @@ var sequence_crdt = {};
         conn,
       } = x;
 
-      if ((type === 'subscribe' || x.cmd === 'get') &&
-        x.protocol_version != 2) throw Error("bad")
+      if (type === 'subscribe' && x.protocol_version != 2)
+        throw Error("wrong protocol version")
 
       if (version && typeof version != "string") {
         if (!self.T[version[0]]) version = add_version_group(version);

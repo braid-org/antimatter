@@ -1,6 +1,6 @@
 {
   "name": "@braid.org/antimatter",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "antimatter: a pruning algorithm for CRDTs and other mergeables",
   "main": "antimatter.js",
   "author": "Braid Working Group",
